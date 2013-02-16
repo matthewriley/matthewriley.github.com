@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Matthew Riley]]></title>
+  <link href="http://matthewriley.us/atom.xml" rel="self"/>
+  <link href="http://matthewriley.us/"/>
+  <updated>2013-02-16T13:23:17-07:00</updated>
+  <id>http://matthewriley.us/</id>
+  <author>
+    <name><![CDATA[Matthew Riley]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[VJET from eBay Open Source: Node.js Code Assist in Eclipse]]></title>
+    <link href="http://matthewriley.us/vjet-from-ebay-open-source-nodejs-code-assist"/>
+    <updated>2012-03-22T00:00:00-07:00</updated>
+    <id>http://matthewriley.us/vjet-from-ebay-open-source-nodejs-code-assist</id>
+    <content type="html"><![CDATA[<p>Once I picked up the basics of Node.js, being an Eclipse user, I started looking for an Eclipse add-on that offers auto completion for Node syntax. One contender available is VJET from eBay Open Source. VJET is a standard Eclipse add-on that adds a new perspective that positions itself as a full JavaScript IDE offering development, execution, testing and debugging.</p>
+
+<p>I&#8217;ve briefly used it to see if it has auto completion for Node syntax, and indeed it does. VJET offers auto completion by importing VJET JavaScript type libraries. This is a similar approach that other Eclipse add-ons follow such as Aptana. The type libraries can be downloaded individually or you can git clone the GitHub repo that contains all of them. Each library is an Eclipse project that is added to the build path of your main VJET project. Once configured you can add a standard require http statement and you&#8217;ll see code assist starting to appear.</p>
+
+<!-- more -->
+
+
+<p>The downside to this approach is keeping the VJET JavaScript type libraries up to date and, upon looking at the GitHub repo, that clearly is the case here. Most of the type libraries have not been updated for around ten months, which is nothing short of an eternity. In the case of Node.js the currently supported version is 0.4 where the current version of Node is 0.6.13.</p>
+
+<p>If this was an active project I&#8217;d request features like being able to right click on a file and Run as a Node.js app or provide some kind of integration with npm, but the only feature I&#8217;d want right now is an active up to date project. The maintainers are asking for help from the community but seeing how it&#8217;s been quite awhile since the last update, it seems like the community has spoken.</p>
+
+<p>VJET has (had?) a lot of potential but it doesn&#8217;t look like it will be realized.</p>
+
+<p>More info on VJET:</p>
+
+<p>VJET on eBay Open Source<br/>
+<a href="https://www.ebayopensource.org/index.php/VJET/HomePage">https://www.ebayopensource.org/index.php/VJET/HomePage</a></p>
+
+<p>VJET Wiki<br/>
+<a href="http://www.ebayopensource.org/wiki/display/VJET/Home">http://www.ebayopensource.org/wiki/display/VJET/Home</a></p>
+
+<p>VJET on GitHub<br/>
+<a href="https://github.com/ebayopensource/vjet">https://github.com/ebayopensource/vjet</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Adobe Proto: Efficient Wireframing]]></title>
+    <link href="http://matthewriley.us/adobe-proto-efficient-wireframing"/>
+    <updated>2011-11-28T00:00:00-07:00</updated>
+    <id>http://matthewriley.us/adobe-proto-efficient-wireframing</id>
+    <content type="html"><![CDATA[<p>Adobe has launched a new cloud platform called Adobe Creative Cloud. Creative Cloud intends to extend the creative process to the cloud by enabling cloud access across all of Adobe&#8217;s creative tools, collectively known as the Adobe Creative Suite. A significant aspect of this initiative is a set of tablet based apps. The Adobe Touch Apps family is made up of Photoshop Touch, Adobe Debut, Adobe Proto, Adobe Collage, Adobe Ideas and Adobe Kuler.</p>
+
+<p>Adobe Proto allows you to create interactive wireframes for websites using a touch interface on a tablet. I&#8217;ve used a number of other desktop and web based wireframing and prototyping tools in the past but not a tablet based tool. When I saw the demo of Proto online from Adobe MAX, I was immediately interested. I&#8217;ve been using Proto for a few days now and I&#8217;ve had a positive experience with it.</p>
+
+<!-- more -->
+
+
+<p>The workflow to create a wireframe in Proto is relatively straight forward. Once you start a new project, building your wireframe is as easy as drawing it on the screen. This is accomplished using a few predefined gestures. Each gesture corresponds to a form element or navigation widget. If you don&#8217;t want to draw your screen elements, you have the option to manually select each item from a toolbar and place it on the screen.</p>
+
+<p>Beyond wireframing, Proto also allows a basic level of interactivity. Once you have built your first wireframe, you can add a second page and link to it from the first. This is not very advanced functionality but if you&#8217;re building an alpha grade wireframe, you don&#8217;t need it to be. Once you have your wireframe built, Proto has a preview feature that allows you to view and interact with your design.</p>
+
+<p>The power behind Creative Cloud is the ability to access and share your creations from multiple locations and the Adobe Touch apps, including Proto, have this built-in. You can upload your completed designs to Adobe&#8217;s cloud. From the Creative Cloud website, you can share the design to others via email, preview the wireframe directly or download it to your desktop as a zip file. The zip file contains an html file for each page and a css file.</p>
+
+<p>Usage of the Creative Cloud is highly recommended but not required to use Proto. I&#8217;d like to see an option to share the design via email directly from the app. Also, exporting the design to an image may be useful. At my day job, we currently share wireframes to our business users as images in a wiki page. I think it would also be very useful if I could import a project from the Creative Cloud in case I delete it from my device.</p>
+
+<p>When working with Proto I found that the responsiveness felt like it was running at 80% - 90%. Fast, but not as fast and responsive as I&#8217;d like. Also, I think grid snapping could be improved. This applies not only to the grid but also relative center snapping and in line snapping to other objects.</p>
+
+<p>I&#8217;m primarily a web applications developer and I found Proto to be geared more towards website developers. For example, the canvas that the grid in on is an infinite vertical scrolling grid. Web applications and mobile applications typically have a fixed viewport. I&#8217;d like to see an option to build a wireframe within fixed dimensions. Also, I need more widgets and UI elements such as grids, panels, tree navigation and far more form elements including input elements we see on mobile platforms.</p>
+
+<p>I don&#8217;t want to emphasize the pain points too much because they&#8217;re minor in comparison to the potential wireframing productivity gains Proto offers. Other browser and desktop based packages currently available are, at times, cumbersome. It seems odd to create interface mock-ups in tools that themselves have less than optimal interfaces. Having a touch interface gives Proto a clear and distinct advantage over other tools. That advantage translates into a noticeable increase in efficiency when creating prototype designs.</p>
+
+<p>Adobe Proto may not be a feature complete tool but it is certainly one of the most efficient, if not the most efficient wireframing tool out there. I was able to wireframe designs with Proto in less than half the time it took in other tools. When you&#8217;re working to get alpha grade wireframe designs out the door and in front of your customers or business owners, Adobe Proto will go a long way in you helping out.</p>
+
+<p>For more information on Adobe Proto visit:<br/>
+<a href="http://www.adobe.com/products/proto.html">http://www.adobe.com/products/proto.html</a></p>
+
+<p>For more information on Adobe Creative Cloud visit:<br/>
+<a href="http://www.adobe.com/products/creativecloud.html">http://www.adobe.com/products/creativecloud.html</a></p>
+
+<p>Below is a quick demo of Proto I created (admittedly poorly lit and low resolution) showing how fast wireframing with Proto is.</p>
+
+<iframe width="" height="" src="http://www.youtube.com/embed/zvHONVipDOA " frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Configuring a Python Google App Engine Development Environment]]></title>
+    <link href="http://matthewriley.us/configuring-a-python-google-app-engine-develo"/>
+    <updated>2011-08-15T00:00:00-07:00</updated>
+    <id>http://matthewriley.us/configuring-a-python-google-app-engine-develo</id>
+    <content type="html"><![CDATA[<h2>Introduction</h2>
+
+<p>One of my latest interests is Python and in particular Python on Google App Engine. App Engine is Google&#8217;s cloud computing platform that allows your web application to scale as your needs increase. I&#8217;m a long time Eclipse user and I when started working with Python, the first thing I looked for was a Python plug-in for Eclipse. I found one with PyDev which is integrated into Aptana Studio.</p>
+
+<p>This article will walk you though how to install and configure a Python App Engine development environment with PyDev for Eclipse. We&#8217;ll also create a sample App Engine application with PyDev, add the sample application to the local App Engine Python server, create an App Engine account and then deploy the sample application to App Engine.</p>
+
+<!-- more -->
+
+
+<p>For more information of Google App Engine please visit:
+<a href="http://code.google.com/appengine/docs/whatisgoogleappengine.html">http://code.google.com/appengine/docs/whatisgoogleappengine.html</a></p>
+
+<h2>Install Python</h2>
+
+<p>The first item you need to install is the Python language. The current version of Python is 3.x, but the Python version running on App Engine is 2.5. There are plans to support Python 2.7 in the future but for now you&#8217;ll need to download Python 2.5 to work with App Engine applications. You can find the Python 2.5 installer here: <a href="http://www.python.org/download/releases/2.5.4/">http://www.python.org/download/releases/2.5.4/</a></p>
+
+<p>It&#8217;s possible to run multiple versions of Python on your local machine. If you&#8217;re interested in doing that, keep in mind that you will need to manually configure your local path to set the default version. You can determine what the default version is from the console when you type &#8220;python&#8221; and enter.</p>
+
+<h2>Install PyDev with Aptana Studio</h2>
+
+<p>PyDev is an Eclipse plug-in so you will need an existing installation of Eclipse on your machine. However if you don&#8217;t already have Eclipse installed, Aptana has a standalone distribution of Eclipse that&#8217;s already configured with Aptana Studio and PyDev. Both the Standalone Version and the Eclipse Plug-in Version of Aptana Studio can be found here: <a href="http://aptana.com/products/studio3/download">http://aptana.com/products/studio3/download</a>.</p>
+
+<p>Once Aptana Studio is installed, open Studio and go to the Window menu and select Preferences. In the preferences window, select and expand the PyDev option. Next click on &#8220;Interpreter - Python&#8221;.</p>
+
+<p><img src="http://matthewriley.us/images/install-pydev-1.png"></p>
+
+<p>If you plan on running multiple versions of Python I recommend you manually configure each version by clicking the &#8220;New&#8230;&#8221; button in the interpreter screen. The &#8220;Auto Config&#8221; button works as well but you still need to select each version individually to complete configuration.</p>
+
+<p>Clicking the New button will prompt you to select the location of Python.</p>
+
+<p><img src="http://matthewriley.us/images/install-pydev-2.png"></p>
+
+<p>After you set the location you will need to select which folders to import.</p>
+
+<p><img src="http://matthewriley.us/images/install-pydev-3.png"></p>
+
+<p>Your configured Python interpreter will be displayed when complete.</p>
+
+<p><img src="http://matthewriley.us/images/install-pydev-4.png"></p>
+
+<h2>Install Google App Engine SDK for Python</h2>
+
+<p>In order to build web applications for App Engine, you need to download the App Engine SDK. The App Engine SDK for Python is an easy download to install and is found here: <a href="http://code.google.com/appengine/downloads.html">http://code.google.com/appengine/downloads.html</a></p>
+
+<p><img src="http://matthewriley.us/images/app-engine-sdk-browser.png"></p>
+
+<p>After the SDK is installed you should see a &#8220;Google App Engine Launcher&#8221; icon on your desktop. Open the launcher and go to Edit and select Preferences. If you intend on running multiple versions of Python, you will need to tell the launcher where you have Python 2.5 installed. Setting the App Engine SDK location is optional.</p>
+
+<p><img src="http://matthewriley.us/images/app-engine-sdk-preferences.png"></p>
+
+<h2>Create Sample PyDev Project for Google App Engine</h2>
+
+<p>Creating a sample PyDev project is easy and does not require Python knowledge to get started. The first step is to open Eclipse go to the Window menu and select Open Perspective then Other. In the Open Perspective listing select PyDev.</p>
+
+<p><img src="http://matthewriley.us/images/sample-project-1.png"></p>
+
+<p>The PyDev perspective will open ready for a new project.</p>
+
+<p><img src="http://matthewriley.us/images/sample-project-2.png"></p>
+
+<p>Go to the File menu and select New then select Project. In the New Project window scroll down and expand PyDev. Select PyDev Google App Engine Project and click Next.</p>
+
+<p><img src="http://matthewriley.us/images/sample-project-3.png"></p>
+
+<p>For the project name enter PyDev App Engine Sample. The default directory for project contents is fine. For project type select Python. For Grammar Version and Interpreter select 2.5 and the interpreter you configured earlier. Select &#8220;Create &#8216;src&#8217; folder&#8230;&#8221; and click Next.</p>
+
+<p><img src="http://matthewriley.us/images/sample-project-4.png"></p>
+
+<p>The next screen will ask for the location of the App Engine SDK location. Click Browse and navigate to the install location. After you select the location you will be prompted to select which App Engine libraries you would like to import. For this sample project the default selections are fine. Accept them and click Next</p>
+
+<p><img src="http://matthewriley.us/images/sample-project-5.png"></p>
+
+<p>The last screen will ask you for an application id. You can enter any string but keep in mind this will change before it is deployed to App Engine. For application template, select &#8220;Ask Login&#8221; which is nothing more than a simple login form that uses a Google account to login. Click Finish.</p>
+
+<p><img src="http://matthewriley.us/images/sample-project-6.png"></p>
+
+<p>You will now see your sample PyDev project ready to use.</p>
+
+<p><img src="http://matthewriley.us/images/sample-project-7.png"></p>
+
+<h2>Add Sample PyDev Project to App Engine Launcher</h2>
+
+<p>Now that App Engine Launcher is configured, and your sample application has been created, you can add that project to the launcher so it can be run. In the launcher go to the File menu and select Add Existing Application. Browse to the src folder of your PyDev project. This is important since the root of your PyDev project does not have any code for the Launcher to run.</p>
+
+<p><img src="http://matthewriley.us/images/launcher-1.png"></p>
+
+<p>To run your PyDev project on your local machine click the Run button and wait for the launcher to start Python.</p>
+
+<p><img src="http://matthewriley.us/images/launcher-2.png"></p>
+
+<p>When the application is ready, click the Browse button and your sample application will open in your default browser.</p>
+
+<p><img src="http://matthewriley.us/images/launcher-3.png"></p>
+
+<h2>Create App Engine Account and Deploy Sample Application</h2>
+
+<p>The last major step is to create an App Engine Account and deploy the sample application. To begin, open your browser and go to <a href="https://appengine.google.com/">https://appengine.google.com/</a> and click the Create Application button.</p>
+
+<p><img src="http://matthewriley.us/images/app-engine-verification-1.png"></p>
+
+<p>Google will need to verify your account by sending you a verification code via SMS. This is a one-time operation and you will not need to do this for every application. Select your country, mobile carrier and enter your mobile number. Your verification code should arrive immediately.</p>
+
+<p><img src="http://matthewriley.us/images/app-engine-verification-2.png"></p>
+
+<p>Enter the code in the next screen and submit the form.</p>
+
+<p><img src="http://matthewriley.us/images/app-engine-verification-3.png"></p>
+
+<p>Once verification is complete, you will be taken to the Create an Application page. This page will provision the server side component that your local sample application will be deployed to. The value you set as the Application Identifier is important. You will need to copy this value into your local application. Accept the defaults for authentication and storage then submit the form.</p>
+
+<p><img src="http://matthewriley.us/images/app-engine-verification-4.png"></p>
+
+<p>Open the App Engine Launcher, select your sample application and click the Edit button. A text editor should open the file app.yaml. The first line will be &#8220;application&#8221;. This is where you place the value that you set for the Application Identifier. Modify the file, save it and exit the editor.</p>
+
+<p><img src="http://matthewriley.us/images/app-engine-verification-5.png"></p>
+
+<p>Lastly, in the App Engine Launcher select your sample application and click the Deploy button. You will be prompted for your Google account email and password. Submit the form and you will see a console output window appear showing the progress of the deployment. Assuming all goes well, the last line of the output should be &#8220;You can close this window now&#8221;.</p>
+
+<p>Open your browser and go to [application identifier].appspot.com. If your identifier is my-sample, then your App Engine URL is my-sample.appspot.com. Your sample application is now deployed on Google App Engine.</p>
+
+<h2>Conclusion</h2>
+
+<p>I hope you now have a general idea how to install and configure PyDev and also how to deploy a Python application to Google App Engine. This article covered PyDev and how to work with App Engine but it did not cover Python itself. If you&#8217;re looking for more information on Python or further details on how to use Python on App Engine, please see the following resources.</p>
+
+<p>Google&#8217;s Python Class<br><a href="https://code.google.com/edu/languages/google-python-class/">https://code.google.com/edu/languages/google-python-class/</a></p>
+
+<p>Dive Into Python<br><a href="http://diveintopython.org/">http://diveintopython.org/</a></p>
+
+<p>Getting Started: Python - Google App Engine<br><a href="https://code.google.com/appengine/docs/python/gettingstarted/">https://code.google.com/appengine/docs/python/gettingstarted/</a></p>
+
+<p>App Engine Python Overview<br><a href="https://code.google.com/appengine/docs/python/overview.html">https://code.google.com/appengine/docs/python/overview.html</a></p>
+]]></content>
+  </entry>
+  
+</feed>

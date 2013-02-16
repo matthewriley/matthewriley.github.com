@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: app engine | Matthew Riley]]></title>
+  <link href="http://matthewriley.us/categories/app-engine/atom.xml" rel="self"/>
+  <link href="http://matthewriley.us/"/>
+  <updated>2013-02-16T13:23:17-07:00</updated>
+  <id>http://matthewriley.us/</id>
+  <author>
+    <name><![CDATA[Matthew Riley]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Configuring a Python Google App Engine Development Environment]]></title>
+    <link href="http://matthewriley.us/configuring-a-python-google-app-engine-develo"/>
+    <updated>2011-08-15T00:00:00-07:00</updated>
+    <id>http://matthewriley.us/configuring-a-python-google-app-engine-develo</id>
+    <content type="html"><![CDATA[<h2>Introduction</h2>
+
+<p>One of my latest interests is Python and in particular Python on Google App Engine. App Engine is Google's cloud computing platform that allows your web application to scale as your needs increase. I'm a long time Eclipse user and I when started working with Python, the first thing I looked for was a Python plug-in for Eclipse. I found one with PyDev which is integrated into Aptana Studio.</p>
+
+<p>This article will walk you though how to install and configure a Python App Engine development environment with PyDev for Eclipse. We'll also create a sample App Engine application with PyDev, add the sample application to the local App Engine Python server, create an App Engine account and then deploy the sample application to App Engine.</p>
+
+<!-- more -->
+
+
+<p>For more information of Google App Engine please visit:
+<a href="http://code.google.com/appengine/docs/whatisgoogleappengine.html">http://code.google.com/appengine/docs/whatisgoogleappengine.html</a></p>
+
+<h2>Install Python</h2>
+
+<p>The first item you need to install is the Python language. The current version of Python is 3.x, but the Python version running on App Engine is 2.5. There are plans to support Python 2.7 in the future but for now you'll need to download Python 2.5 to work with App Engine applications. You can find the Python 2.5 installer here: <a href="http://www.python.org/download/releases/2.5.4/">http://www.python.org/download/releases/2.5.4/</a></p>
+
+<p>It's possible to run multiple versions of Python on your local machine. If you're interested in doing that, keep in mind that you will need to manually configure your local path to set the default version. You can determine what the default version is from the console when you type "python" and enter.</p>
+
+<h2>Install PyDev with Aptana Studio</h2>
+
+<p>PyDev is an Eclipse plug-in so you will need an existing installation of Eclipse on your machine. However if you don't already have Eclipse installed, Aptana has a standalone distribution of Eclipse that's already configured with Aptana Studio and PyDev. Both the Standalone Version and the Eclipse Plug-in Version of Aptana Studio can be found here: <a href="http://aptana.com/products/studio3/download">http://aptana.com/products/studio3/download</a>.</p>
+
+<p>Once Aptana Studio is installed, open Studio and go to the Window menu and select Preferences. In the preferences window, select and expand the PyDev option. Next click on "Interpreter - Python".</p>
+
+<p><img src="/images/install-pydev-1.png"></p>
+
+<p>If you plan on running multiple versions of Python I recommend you manually configure each version by clicking the "New..." button in the interpreter screen. The "Auto Config" button works as well but you still need to select each version individually to complete configuration.</p>
+
+<p>Clicking the New button will prompt you to select the location of Python.</p>
+
+<p><img src="/images/install-pydev-2.png"></p>
+
+<p>After you set the location you will need to select which folders to import.</p>
+
+<p><img src="/images/install-pydev-3.png"></p>
+
+<p>Your configured Python interpreter will be displayed when complete.</p>
+
+<p><img src="/images/install-pydev-4.png"></p>
+
+<h2>Install Google App Engine SDK for Python</h2>
+
+<p>In order to build web applications for App Engine, you need to download the App Engine SDK. The App Engine SDK for Python is an easy download to install and is found here: <a href="http://code.google.com/appengine/downloads.html">http://code.google.com/appengine/downloads.html</a></p>
+
+<p><img src="/images/app-engine-sdk-browser.png"></p>
+
+<p>After the SDK is installed you should see a "Google App Engine Launcher" icon on your desktop. Open the launcher and go to Edit and select Preferences. If you intend on running multiple versions of Python, you will need to tell the launcher where you have Python 2.5 installed. Setting the App Engine SDK location is optional.</p>
+
+<p><img src="/images/app-engine-sdk-preferences.png"></p>
+
+<h2>Create Sample PyDev Project for Google App Engine</h2>
+
+<p>Creating a sample PyDev project is easy and does not require Python knowledge to get started. The first step is to open Eclipse go to the Window menu and select Open Perspective then Other. In the Open Perspective listing select PyDev.</p>
+
+<p><img src="/images/sample-project-1.png"></p>
+
+<p>The PyDev perspective will open ready for a new project.</p>
+
+<p><img src="/images/sample-project-2.png"></p>
+
+<p>Go to the File menu and select New then select Project. In the New Project window scroll down and expand PyDev. Select PyDev Google App Engine Project and click Next.</p>
+
+<p><img src="/images/sample-project-3.png"></p>
+
+<p>For the project name enter PyDev App Engine Sample. The default directory for project contents is fine. For project type select Python. For Grammar Version and Interpreter select 2.5 and the interpreter you configured earlier. Select "Create 'src' folder..." and click Next.</p>
+
+<p><img src="/images/sample-project-4.png"></p>
+
+<p>The next screen will ask for the location of the App Engine SDK location. Click Browse and navigate to the install location. After you select the location you will be prompted to select which App Engine libraries you would like to import. For this sample project the default selections are fine. Accept them and click Next</p>
+
+<p><img src="/images/sample-project-5.png"></p>
+
+<p>The last screen will ask you for an application id. You can enter any string but keep in mind this will change before it is deployed to App Engine. For application template, select "Ask Login" which is nothing more than a simple login form that uses a Google account to login. Click Finish.</p>
+
+<p><img src="/images/sample-project-6.png"></p>
+
+<p>You will now see your sample PyDev project ready to use.</p>
+
+<p><img src="/images/sample-project-7.png"></p>
+
+<h2>Add Sample PyDev Project to App Engine Launcher</h2>
+
+<p>Now that App Engine Launcher is configured, and your sample application has been created, you can add that project to the launcher so it can be run. In the launcher go to the File menu and select Add Existing Application. Browse to the src folder of your PyDev project. This is important since the root of your PyDev project does not have any code for the Launcher to run.</p>
+
+<p><img src="/images/launcher-1.png"></p>
+
+<p>To run your PyDev project on your local machine click the Run button and wait for the launcher to start Python.</p>
+
+<p><img src="/images/launcher-2.png"></p>
+
+<p>When the application is ready, click the Browse button and your sample application will open in your default browser.</p>
+
+<p><img src="/images/launcher-3.png"></p>
+
+<h2>Create App Engine Account and Deploy Sample Application</h2>
+
+<p>The last major step is to create an App Engine Account and deploy the sample application. To begin, open your browser and go to <a href="https://appengine.google.com/">https://appengine.google.com/</a> and click the Create Application button.</p>
+
+<p><img src="/images/app-engine-verification-1.png"></p>
+
+<p>Google will need to verify your account by sending you a verification code via SMS. This is a one-time operation and you will not need to do this for every application. Select your country, mobile carrier and enter your mobile number. Your verification code should arrive immediately.</p>
+
+<p><img src="/images/app-engine-verification-2.png"></p>
+
+<p>Enter the code in the next screen and submit the form.</p>
+
+<p><img src="/images/app-engine-verification-3.png"></p>
+
+<p>Once verification is complete, you will be taken to the Create an Application page. This page will provision the server side component that your local sample application will be deployed to. The value you set as the Application Identifier is important. You will need to copy this value into your local application. Accept the defaults for authentication and storage then submit the form.</p>
+
+<p><img src="/images/app-engine-verification-4.png"></p>
+
+<p>Open the App Engine Launcher, select your sample application and click the Edit button. A text editor should open the file app.yaml. The first line will be "application". This is where you place the value that you set for the Application Identifier. Modify the file, save it and exit the editor.</p>
+
+<p><img src="/images/app-engine-verification-5.png"></p>
+
+<p>Lastly, in the App Engine Launcher select your sample application and click the Deploy button. You will be prompted for your Google account email and password. Submit the form and you will see a console output window appear showing the progress of the deployment. Assuming all goes well, the last line of the output should be "You can close this window now".</p>
+
+<p>Open your browser and go to [application identifier].appspot.com. If your identifier is my-sample, then your App Engine URL is my-sample.appspot.com. Your sample application is now deployed on Google App Engine.</p>
+
+<h2>Conclusion</h2>
+
+<p>I hope you now have a general idea how to install and configure PyDev and also how to deploy a Python application to Google App Engine. This article covered PyDev and how to work with App Engine but it did not cover Python itself. If you're looking for more information on Python or further details on how to use Python on App Engine, please see the following resources.</p>
+
+<p>Google's Python Class<br><a href="https://code.google.com/edu/languages/google-python-class/">https://code.google.com/edu/languages/google-python-class/</a></p>
+
+<p>Dive Into Python<br><a href="http://diveintopython.org/">http://diveintopython.org/</a></p>
+
+<p>Getting Started: Python - Google App Engine<br><a href="https://code.google.com/appengine/docs/python/gettingstarted/">https://code.google.com/appengine/docs/python/gettingstarted/</a></p>
+
+<p>App Engine Python Overview<br><a href="https://code.google.com/appengine/docs/python/overview.html">https://code.google.com/appengine/docs/python/overview.html</a></p>
+]]></content>
+  </entry>
+  
+</feed>
