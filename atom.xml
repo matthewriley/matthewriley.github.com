@@ -4,7 +4,7 @@
   <title><![CDATA[Matthew Riley]]></title>
   <link href="http://matthewriley.us/atom.xml" rel="self"/>
   <link href="http://matthewriley.us/"/>
-  <updated>2013-02-16T13:23:17-07:00</updated>
+  <updated>2013-02-16T17:29:18-07:00</updated>
   <id>http://matthewriley.us/</id>
   <author>
     <name><![CDATA[Matthew Riley]]></name>
@@ -18,14 +18,14 @@
     <link href="http://matthewriley.us/vjet-from-ebay-open-source-nodejs-code-assist"/>
     <updated>2012-03-22T00:00:00-07:00</updated>
     <id>http://matthewriley.us/vjet-from-ebay-open-source-nodejs-code-assist</id>
-    <content type="html"><![CDATA[<p>Once I picked up the basics of Node.js, being an Eclipse user, I started looking for an Eclipse add-on that offers auto completion for Node syntax. One contender available is VJET from eBay Open Source. VJET is a standard Eclipse add-on that adds a new perspective that positions itself as a full JavaScript IDE offering development, execution, testing and debugging.</p>
+    <content type="html"><![CDATA[<p>VJET from eBay Open Source is an Eclipse add-on that positions itself as a full JavaScript IDE. It offers JavaScript development, execution, testing and debugging. Once I picked up the basics of Node.js, being an Eclipse user, I started looking for an add-on that offers auto completion for Node syntax. One contender available is VJET.</p>
 
 <p>I&#8217;ve briefly used it to see if it has auto completion for Node syntax, and indeed it does. VJET offers auto completion by importing VJET JavaScript type libraries. This is a similar approach that other Eclipse add-ons follow such as Aptana. The type libraries can be downloaded individually or you can git clone the GitHub repo that contains all of them. Each library is an Eclipse project that is added to the build path of your main VJET project. Once configured you can add a standard require http statement and you&#8217;ll see code assist starting to appear.</p>
 
 <!-- more -->
 
 
-<p>The downside to this approach is keeping the VJET JavaScript type libraries up to date and, upon looking at the GitHub repo, that clearly is the case here. Most of the type libraries have not been updated for around ten months, which is nothing short of an eternity. In the case of Node.js the currently supported version is 0.4 where the current version of Node is 0.6.13.</p>
+<p>The downside to this approach is keeping the VJET JavaScript type libraries up to date and, upon looking at the GitHub repo, that clearly is the case here. Most of the type libraries have not been updated for around ten months, which is nothing short of an eternity. In the case of Node.js the currently supported version is 0.4 where the current version of Node (as of this writing) is 0.6.13.</p>
 
 <p>If this was an active project I&#8217;d request features like being able to right click on a file and Run as a Node.js app or provide some kind of integration with npm, but the only feature I&#8217;d want right now is an active up to date project. The maintainers are asking for help from the community but seeing how it&#8217;s been quite awhile since the last update, it seems like the community has spoken.</p>
 

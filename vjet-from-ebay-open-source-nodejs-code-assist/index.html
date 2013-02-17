@@ -9,7 +9,7 @@
   <meta name="author" content="Matthew Riley">
 
   
-  <meta name="description" content="Once I picked up the basics of Node.js, being an Eclipse user, I started looking for an Eclipse add-on that offers auto completion for Node syntax. &hellip;">
+  <meta name="description" content="VJET from eBay Open Source is an Eclipse add-on that positions itself as a full JavaScript IDE. It offers JavaScript development, execution, testing &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -24,7 +24,7 @@
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <link href="http://feeds.feedburner.com/MatthewRileysPosterous" rel="alternate" title="Matthew Riley" type="application/atom+xml">
+  <link href="http://feeds.feedburner.com/MatthewRileyFeed" rel="alternate" title="Matthew Riley" type="application/atom+xml">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
@@ -57,9 +57,9 @@
 
 </header>
   <nav role="navigation"><ul class="subscription" data-subscription="rss email">
-  <li><a href="http://feeds.feedburner.com/MatthewRileysPosterous" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  <li><a href="http://feeds.feedburner.com/MatthewRileyFeed" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
   
-    <li><a href="https://feedburner.google.com/fb/a/mailverify?uri=MattRileysPosterous" rel="subscribe-email" title="subscribe via email">Email</a></li>
+    <li><a href="https://feedburner.google.com/fb/a/mailverify?uri=MatthewRileyFeed" rel="subscribe-email" title="subscribe via email">Email</a></li>
   
 </ul>
   
@@ -108,14 +108,14 @@
   </header>
 
 
-<div class="entry-content"><p>Once I picked up the basics of Node.js, being an Eclipse user, I started looking for an Eclipse add-on that offers auto completion for Node syntax. One contender available is VJET from eBay Open Source. VJET is a standard Eclipse add-on that adds a new perspective that positions itself as a full JavaScript IDE offering development, execution, testing and debugging.</p>
+<div class="entry-content"><p>VJET from eBay Open Source is an Eclipse add-on that positions itself as a full JavaScript IDE. It offers JavaScript development, execution, testing and debugging. Once I picked up the basics of Node.js, being an Eclipse user, I started looking for an add-on that offers auto completion for Node syntax. One contender available is VJET.</p>
 
 <p>I&#8217;ve briefly used it to see if it has auto completion for Node syntax, and indeed it does. VJET offers auto completion by importing VJET JavaScript type libraries. This is a similar approach that other Eclipse add-ons follow such as Aptana. The type libraries can be downloaded individually or you can git clone the GitHub repo that contains all of them. Each library is an Eclipse project that is added to the build path of your main VJET project. Once configured you can add a standard require http statement and you&#8217;ll see code assist starting to appear.</p>
 
 <!-- more -->
 
 
-<p>The downside to this approach is keeping the VJET JavaScript type libraries up to date and, upon looking at the GitHub repo, that clearly is the case here. Most of the type libraries have not been updated for around ten months, which is nothing short of an eternity. In the case of Node.js the currently supported version is 0.4 where the current version of Node is 0.6.13.</p>
+<p>The downside to this approach is keeping the VJET JavaScript type libraries up to date and, upon looking at the GitHub repo, that clearly is the case here. Most of the type libraries have not been updated for around ten months, which is nothing short of an eternity. In the case of Node.js the currently supported version is 0.4 where the current version of Node (as of this writing) is 0.6.13.</p>
 
 <p>If this was an active project I&#8217;d request features like being able to right click on a file and Run as a Node.js app or provide some kind of integration with npm, but the only feature I&#8217;d want right now is an active up to date project. The maintainers are asking for help from the community but seeing how it&#8217;s been quite awhile since the last update, it seems like the community has spoken.</p>
 
