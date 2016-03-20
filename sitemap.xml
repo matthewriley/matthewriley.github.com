@@ -1,31 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://matthewriley.us/configuring-a-python-google-app-engine-develo</loc>
-        <lastmod>2013-02-16T12:23:05-07:00</lastmod>
-    </url>
-    <url>
-        <loc>http://matthewriley.us/adobe-proto-efficient-wireframing</loc>
-        <lastmod>2013-02-12T16:18:32-07:00</lastmod>
-    </url>
-    <url>
-        <loc>http://matthewriley.us/vjet-from-ebay-open-source-nodejs-code-assist</loc>
-        <lastmod>2013-02-16T16:24:56-07:00</lastmod>
-    </url>
-    <url>
-        <loc>http://matthewriley.us/git-behind-the-firewall-with-atlassian-stash</loc>
-        <lastmod>2013-02-28T10:02:58-07:00</lastmod>
-    </url>
-    <url>
-        <loc>http://matthewriley.us/blog/archives/</loc>
-        <lastmod>2013-02-28T10:02:58-07:00</lastmod>
-    </url>
-    <url>
         <loc>http://matthewriley.us/</loc>
-        <lastmod>2013-02-28T10:02:58-07:00</lastmod>
+        <lastmod>2016-03-20T12:00:00-07:00</lastmod>
     </url>
     <url>
         <loc>http://matthewriley.us/robots.txt</loc>
-        <lastmod>2013-02-10T19:53:44-07:00</lastmod>
+        <lastmod>2016-03-20T12:00:00-07:00</lastmod>
     </url>
 </urlset>
